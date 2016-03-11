@@ -25,8 +25,11 @@
     [super viewDidLoad];
     
     
-    SHImageScrollView *imageScrollView = [[SHImageScrollView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 200)];
-    imageScrollView.imageArray = @[@"http://pic.58pic.com/58pic/16/38/57/02958PICizD_1024.jpg",@"http://pic38.nipic.com/20140225/12213820_113430471000_2.jpg",@"http://image.tianjimedia.com/uploadImages/2012/004/67U0IYRSH5GP.jpg",@"http://pic34.nipic.com/20131019/12213820_163423919000_2.jpg",@"http://image.tianjimedia.com/uploadImages/2015/013/24/K71I70KFJ9CK_1000x500.jpg"];
+    SHImageScrollView *imageScrollView = [[SHImageScrollView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 180)];
+    imageScrollView.pageControlFrame = CGRectMake(ScreenWidth * 0.5, 150, ScreenWidth * 0.5, 20);
+    imageScrollView.hasTimer = YES;
+    imageScrollView.imageArrayFromNet = @[@"http://pic.58pic.com/58pic/16/38/57/02958PICizD_1024.jpg",@"http://pic38.nipic.com/20140225/12213820_113430471000_2.jpg",@"http://image.tianjimedia.com/uploadImages/2012/004/67U0IYRSH5GP.jpg",@"http://pic34.nipic.com/20131019/12213820_163423919000_2.jpg",@"http://image.tianjimedia.com/uploadImages/2015/013/24/K71I70KFJ9CK_1000x500.jpg"];
+    
     [self.view addSubview:imageScrollView];
     
 }

@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Extension)
-/** 屏幕的宽度 */
-#define ScreenWidth   [[UIScreen mainScreen] bounds].size.width
-/** 屏幕的高度 */
-#define ScreenHeigth    [[UIScreen mainScreen] bounds].size.height
+
 
 // 给UIView添加方法, 方便使用的时候直接赋值
 @property (nonatomic, assign) CGSize size;

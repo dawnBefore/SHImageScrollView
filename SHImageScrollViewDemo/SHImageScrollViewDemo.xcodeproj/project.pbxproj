@@ -17,6 +17,11 @@
 		650EF3481C9155AD00948C6D /* SHImageScrollViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EF3471C9155AD00948C6D /* SHImageScrollViewDemoUITests.m */; };
 		650EF3581C91564900948C6D /* SHImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EF3571C91564900948C6D /* SHImageScrollView.m */; };
 		650EF35B1C91594400948C6D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EF35A1C91594400948C6D /* UIView+Extension.m */; };
+		650EF3611C91872200948C6D /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 650EF35C1C91872200948C6D /* 0.png */; };
+		650EF3621C91872200948C6D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 650EF35D1C91872200948C6D /* 1.png */; };
+		650EF3631C91872200948C6D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 650EF35E1C91872200948C6D /* 2.png */; };
+		650EF3641C91872200948C6D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 650EF35F1C91872200948C6D /* 3.png */; };
+		650EF3651C91872200948C6D /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 650EF3601C91872200948C6D /* 4.png */; };
 		F150CF1687361DEBCD1B3C78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BF4B0A2066B09518BFAF88 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,11 @@
 		650EF3571C91564900948C6D /* SHImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHImageScrollView.m; sourceTree = "<group>"; };
 		650EF3591C91594400948C6D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		650EF35A1C91594400948C6D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		650EF35C1C91872200948C6D /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		650EF35D1C91872200948C6D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		650EF35E1C91872200948C6D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		650EF35F1C91872200948C6D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		650EF3601C91872200948C6D /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		D9BF4B0A2066B09518BFAF88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA007467124592B126492898 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE11FD5D8442FFF2D969245F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +140,11 @@
 				650EF3291C9155AD00948C6D /* ViewController.m */,
 				650EF3591C91594400948C6D /* UIView+Extension.h */,
 				650EF35A1C91594400948C6D /* UIView+Extension.m */,
+				650EF35C1C91872200948C6D /* 0.png */,
+				650EF35D1C91872200948C6D /* 1.png */,
+				650EF35E1C91872200948C6D /* 2.png */,
+				650EF35F1C91872200948C6D /* 3.png */,
+				650EF3601C91872200948C6D /* 4.png */,
 				650EF32B1C9155AD00948C6D /* Main.storyboard */,
 				650EF32E1C9155AD00948C6D /* Assets.xcassets */,
 				650EF3301C9155AD00948C6D /* LaunchScreen.storyboard */,
@@ -252,6 +267,7 @@
 				TargetAttributes = {
 					650EF31E1C9155AD00948C6D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = YFUEWK9EMC;
 					};
 					650EF3371C9155AD00948C6D = {
 						CreatedOnToolsVersion = 7.2;
@@ -288,9 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650EF3631C91872200948C6D /* 2.png in Resources */,
+				650EF3611C91872200948C6D /* 0.png in Resources */,
 				650EF3321C9155AD00948C6D /* LaunchScreen.storyboard in Resources */,
 				650EF32F1C9155AD00948C6D /* Assets.xcassets in Resources */,
+				650EF3651C91872200948C6D /* 4.png in Resources */,
 				650EF32D1C9155AD00948C6D /* Main.storyboard in Resources */,
+				650EF3641C91872200948C6D /* 3.png in Resources */,
+				650EF3621C91872200948C6D /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,10 +528,14 @@
 			baseConfigurationReference = EA007467124592B126492898 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SHImageScrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shw.SHImageScrollViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maiyatian.836;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -519,10 +544,14 @@
 			baseConfigurationReference = EE11FD5D8442FFF2D969245F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SHImageScrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shw.SHImageScrollViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maiyatian.836;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
