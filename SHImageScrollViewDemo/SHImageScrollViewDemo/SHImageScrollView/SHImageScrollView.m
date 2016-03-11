@@ -45,6 +45,16 @@
     return self;
 }
 
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [self setTimer];
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self.timer invalidate];
+}
 
 #pragma mark - 私有方法
 - (void)setScrollView
@@ -59,26 +69,25 @@
     
     
     for (int i = 0; i < self.receiveArray.count + 2; i++) {
-        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, self.height)];
+        imageView.userInteractionEnabled = YES;
         if (i == 0) {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, self.height)];
             [imageView sd_setImageWithURL:[NSURL URLWithString:self.receiveArray.lastObject] placeholderImage:[UIImage imageNamed:_placeHolderImageName]];
             imageView.image = [UIImage imageNamed:self.receiveArray.lastObject];
             [self.imageScrollView addSubview:imageView];
             continue;
         } else if (i == self.receiveArray.count + 1) {
-            
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, self.height)];
             [imageView sd_setImageWithURL:[NSURL URLWithString:self.receiveArray[0]]];
             imageView.image = [UIImage imageNamed:self.receiveArray[0]];
             [self.imageScrollView addSubview:imageView];
             
         } else {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, self.height)];
             [imageView sd_setImageWithURL:[NSURL URLWithString:self.receiveArray[i - 1]]];
             imageView.image = [UIImage imageNamed:self.receiveArray[i - 1]];
             [self.imageScrollView addSubview:imageView];
         }
+        UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+        [imageView addGestureRecognizer:tapGR];
         
     }
     
@@ -86,6 +95,16 @@
     self.imageScrollView.contentOffset = CGPointMake(ScreenWidth, 0);
     
     [self setPageControl];
+    
+}
+
+- (void)tapAction:(UITapGestureRecognizer *)tapGR
+{
+    NSInteger index = self.imageScrollView.contentOffset.x / ScreenWidth;
+    NSLog(@"点击事件： %ld", index);
+    if ([self.delegate respondsToSelector:@selector(imageScrollView:didSelectedItem:)]) {
+        [self.delegate imageScrollView:self didSelectedItem:index];
+    }
     
 }
 

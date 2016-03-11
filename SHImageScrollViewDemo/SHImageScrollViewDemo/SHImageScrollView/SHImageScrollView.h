@@ -7,6 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SHImageScrollView;
+
+@protocol  SHImageScrollViewDelegate <NSObject>
+
+/** 点击了图片，index为第几张图片 */
+- (void)imageScrollView:(SHImageScrollView *)imageScrollView didSelectedItem:(NSInteger)index;
+
+@end
 
 /** 屏幕的宽度 */
 #define ScreenWidth   [[UIScreen mainScreen] bounds].size.width
@@ -41,5 +49,7 @@
 
 /** 没选中的pageControl的颜色 */
 @property (nonatomic, strong) UIColor *pageTintColor;
+
+@property (nonatomic, assign) id<SHImageScrollViewDelegate> delegate;
 
 @end
